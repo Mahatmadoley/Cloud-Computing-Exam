@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tourist Spots Showcase</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Tourist Spots Showcase</h1>
+      <p class="tagline">Explore top destinations around the world</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <input id="searchInput" type="search" placeholder="Search spots or locations..." aria-label="Search tourist spots">
+      <div id="categories" class="categories"></div>
+      <div class="favorites-indicator">Favorites: <span id="favCount">0</span></div>
+    </section>
+
+    <section id="spotsGrid" class="grid" aria-live="polite"></section>
+  </main>
+
+  <div id="spotModal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="close-btn" id="modalClose" aria-label="Close">×</button>
+      <img id="modalImage" src="" alt="" />
+      <div class="modal-body">
+        <h2 id="modalTitle"></h2>
+        <p id="modalLocation" class="muted"></p>
+        <p id="modalDesc"></p>
+        <div class="modal-actions">
+          <button id="favToggle">Add to favorites</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+        <p>contact:</p>
+        <P></P>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
